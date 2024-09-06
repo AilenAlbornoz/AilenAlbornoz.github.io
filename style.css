@@ -1,3 +1,9 @@
+.profile-pic{
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  border: 3px solid #333;
+}
 
 .title {
     font-size: 2.5em;
@@ -12,12 +18,12 @@
   }
   
   .nav-links {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
-    text-align: center;
   }
   
   .nav-links li {
-    display: inline;
     margin: 0 15px;
     font-size: 1.5em;
   }
@@ -44,15 +50,59 @@
     border: 3px solid #333;
   }
   
-.row{
+  .row{
     justify-content: center;
     display: flex;
+    margin-bottom: 20px;
 }    
 
-.rounded-image{
+  .rounded-image{
     width: 300px;
     height: 300px;
     gap: 20px;
     border-radius: 50%;
     border: 3px solid #f4f4f4;
+  }
+
+  img {
+  width: 40%;
+  margin: 10px;
+  border-radius: 50%;
+  border: 3px solid #f4f4f4;
+  }
+
+  .image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+/*MEDIA QUERIES, Responsive*/
+/* Breakpoints */
+/* dispositivos pequeños */
+@media (max-width: 575px) { 
+  .img {
+    width: 50%;
+  }
+}
+
+/* dispositivos medianos */ 
+@media (min-width: 576px) and (max-width: 767px) {
+   .img{
+    width: 30%;
+   }
+}
+
+/* dispositivos grandes */
+@media (min-width: 768px) and (max-width: 991px) {
+  .img{
+    width: 25%;
+  }
+}
+
+/* dispositivos extra grandes */
+@media (min-width: 992px) {  
+  .img{
+    width: 20%;
+  }
 }
